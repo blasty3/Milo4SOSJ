@@ -7,6 +7,7 @@ This framework is developed by combining the OPC-UA framework Eclipse Milo by Ke
 
 
 [1] Profanter, Stefan, et al. "OPC UA for plug & produce: Automatic device discovery using LDS-ME." Proceedings of the IEEE International Conference on Emerging Technologies And Factory Automation (ETFA). 2017.
+
 [2] Atmojo, Udayanto Dwi, Zoran Salcic, and K. I. K. Wang. "SOSJ: A new programming paradigm for adaptive distributed systems." IEEE 10 th Conference on Industrial Electronics and Applications (ICIEA). 2015.
 
 
