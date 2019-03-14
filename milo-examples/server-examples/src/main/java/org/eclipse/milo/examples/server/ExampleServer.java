@@ -85,6 +85,8 @@ public class ExampleServer {
             }
         );
 
+        
+        
         OpcUaServerConfig serverConfig = OpcUaServerConfig.builder()
             .setApplicationUri("urn:eclipse:milo:examples:server")
             .setApplicationName(LocalizedText.english("Eclipse Milo OPC-UA Example Server"))

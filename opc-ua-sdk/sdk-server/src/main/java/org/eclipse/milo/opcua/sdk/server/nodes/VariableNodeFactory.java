@@ -118,6 +118,8 @@ public class VariableNodeFactory {
             instance.setDataType(declaration.getDataType());
             instance.setValueRank(declaration.getValueRank());
             instance.setArrayDimensions(declaration.getArrayDimensions());
+            instance.setAccessLevel(declaration.getAccessLevel());
+            instance.setUserAccessLevel(declaration.getUserAccessLevel());
 
             node.addProperty(instance);
             nodeMap.addNode(instance);
@@ -145,6 +147,8 @@ public class VariableNodeFactory {
             instance.setDataType(declaration.getDataType());
             instance.setValueRank(declaration.getValueRank());
             instance.setArrayDimensions(declaration.getArrayDimensions());
+            instance.setAccessLevel(declaration.getAccessLevel());
+            instance.setUserAccessLevel(declaration.getUserAccessLevel());
 
             node.addComponent(instance);
             nodeMap.addNode(instance);

@@ -46,6 +46,7 @@ public class FindServersClient {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
+    /*
     public static void main(String[] args) throws Exception {
         FindServersClient example = new FindServersClient();
 
@@ -55,6 +56,7 @@ public class FindServersClient {
             .get();
 
     }
+    */
 
     private UaTcpStackClient getClient(String endpointUrl) {
         KeyStoreLoader loader;
@@ -66,7 +68,7 @@ public class FindServersClient {
         }
 
         UaTcpStackClientConfig config = UaTcpStackClientConfig.builder()
-            .setApplicationName(LocalizedText.english("Stack Example Client"))
+            .setApplicationName(LocalizedText.english("GlobalServiceRegistry"))
             .setApplicationUri(String.format("urn:example-client:%s", UUID.randomUUID()))
             .setCertificate(loader.getClientCertificate())
             .setKeyPair(loader.getClientKeyPair())
@@ -85,6 +87,7 @@ public class FindServersClient {
         }).thenAccept(v -> {
             logger.info("findServersOnNetwork returned " + v.length + " Servers");
             for (ServerOnNetwork sn : v) {
+            	
                 logger.info("Server: " + sn.getServerName());
                 logger.info("\tRecordID: " + sn.getRecordId());
                 logger.info("\tDiscovery URL: " + sn.getDiscoveryUrl());
